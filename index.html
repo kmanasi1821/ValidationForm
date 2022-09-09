@@ -1,0 +1,211 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
+    <link rel="shortcut icon" type="image/x-icon"
+        href="https://res.cloudinary.com/crunchbase-production/image/upload/c_lpad,f_auto,q_auto:eco,dpr_1/nkhv5z20o1k03wzeydzj">
+    <link rel="stylesheet" href="index.css">
+
+    <title>Registrartion Form</title>
+</head>
+
+<body style="background-color:#F5F5F5;">
+    <!-- ----------------------------- Navbar ----------------------------- -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <a class="navbar-brand" href="#">
+                    <img src="https://res.cloudinary.com/crunchbase-production/image/upload/c_lpad,f_auto,q_auto:eco,dpr_1/nkhv5z20o1k03wzeydzj"
+                        alt="logo" width="40" height="34" style="border-radius: 50%;"
+                        class="d-inline-block align-text-top">
+                    Registrartion Page
+                </a>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+                aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarScroll">
+                <ul class="navbar-nav mr-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#">Home</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav my-2 my-lg-0 navbar-nav-scroll abc">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#signup-form">Sign Up</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#login-form">Login</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- ----------------------------- Header Image ----------------------------- -->
+    <img src="https://www.seekpng.com/png/detail/212-2125625_website-design-development-web-designing.png"
+        id="header-img" alt="header-img">
+
+    <div class="container main-container">
+        <div class="form">
+            <form class="row g-3 signup-form registration-form" id="signup-form">
+                <p class="display-4 sign-up-title">Sign Up</p>
+                <!-- -----------------------------First Name--------------------------------------- -->
+                <div class="col-md-6">
+                    <label for="first-name" class="form-label">First name</label>
+                    <input type="text" class="form-control" id="first-name" autocomplete="off">
+                    <div class="valid-feedback" id="first-name-valid">
+                        Looks good!
+                    </div>
+                    <div class="invalid-feedback" id="first-name-invalid">
+                        Please enter a valid first name.
+                    </div>
+                </div>
+                <!-- -----------------------------Last Name--------------------------------------- -->
+                <div class="col-md-6">
+                    <label for="last-name" class="form-label">Last name</label>
+                    <input type="text" class="form-control" id="last-name" autocomplete="off">
+                    <div class="valid-feedback" id="last-name-valid">
+                        Looks good!
+                    </div>
+                    <div class="invalid-feedback" id="last-name-invalid">
+                        Please enter a valid last name.
+                    </div>
+                </div>
+                <!-- -----------------------------Email--------------------------------------- -->
+                <div class="col-md-6">
+                    <label for="email" class="form-label">Email</label>
+                    <div class="input-group has-validation">
+                        <span class="input-group-text" id="inputGroupPrepend">@</span>
+                        <input type="text" class="form-control" id="email" aria-describedby="inputGroupPrepend"
+                            autocomplete="off">
+                        <div class="valid-feedback" id="email-valid">
+                            Looks good!
+                        </div>
+                        <div class="invalid-feedback" id="email-invalid">
+                            Please enter a valid email.
+                        </div>
+                    </div>
+                </div>
+                <!-- -----------------------------Phone Number--------------------------------------- -->
+                <div class="col-md-6">
+                    <label for="phone" class="form-label">Phone</label>
+                    <div class="input-group has-validation">
+                        <span class="input-group-text" id="inputGroupPrepend">+91</span>
+                        <input type="text" class="form-control" id="phone" aria-describedby="inputGroupPrepend"
+                            autocomplete="off">
+                        <div class="valid-feedback" id="phone-valid">
+                            Looks good!
+                        </div>
+                        <div class="invalid-feedback" id="phone-invalid">
+                            Please enter a valid phone number.
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <label for="signup-password" class="form-label">Password</label>
+                    <input type="password" class="form-control" id="signup-password" required autocomplete="off">
+                    <div class="invalid-feedback" id="password-invalid">
+                        Please provide a valid password.
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <label for="signup-confirm-password" class="form-label">Confirm Password</label>
+                    <input type="password" class="form-control" id="signup-confirm-password" required
+                        autocomplete="off">
+                    <div class="invalid-feedback" id="confirm-password-invalid">
+                        Password and confirm password do not match.
+                    </div>
+                </div>
+                <!-- --------------------------------Batch Number--------------------------------------- -->
+                <div class="col-md-6">
+                    <label for="batch" class="form-label">Batch No</label>
+                    <select class="form-select" id="batch">
+                        <option value="None" selected>Select Batch No ...</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                    </select>
+                    <div class="valid-feedback" id="batch-valid">
+                        Looks good!
+                    </div>
+                    <div class="invalid-feedback" id="batch-invalid">
+                        Please select a valid batch no.
+                    </div>
+                </div>
+                <!-- -----------------------------Module Number--------------------------------------- -->
+                <div class="col-md-6">
+                    <label for="module" class="form-label">Current Module</label>
+                    <select class="form-select" id="module">
+                        <option value="None" selected>Select Current Module ...</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                    </select>
+                    <div class="valid-feedback" id="module-valid">
+                        Looks good!
+                    </div>
+                    <div class="invalid-feedback" id="module-invalid">
+                        Please select a valid current module.
+                    </div>
+                </div>
+                <!-- ----------------------------- T&C--------------------------------------- -->
+                <div class="col-12">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="tnC">
+                        <label class="form-check-label" for="tnC">
+                            Agree to terms and conditions
+                        </label>
+                        <div class="invalid-feedback" id="invalid-tnc">
+                            You must agree before submiting
+                        </div>
+                    </div>
+                </div>
+                <div class="button-wrapper">
+                    <button type="button" class="btn btn-dark" onclick="validate()">Sign Up</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    </div>
+    <div class="container main-container">
+        <div class="form">
+
+            <form class="login-form" id="login-form">
+                <h1 class="display-4 login-title">Login</h1>
+                <div class="alert alert-success alert-dismissible fade show login-alert" role="alert"
+                    id="login-alert-success">
+                    Access granted!
+                </div>
+                <div class="alert alert-danger alert-dismissible fade show login-alert" role="alert"
+                    id="login-alert-failure">
+                    Access denied!
+                </div>
+                <div class="mb-3">
+                    <label for="login-email" class="form-label">Email address</label>
+                    <input type="email" class="form-control" id="login-email" aria-describedby="emailHelp">
+                    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                </div>
+                <div class="mb-3">
+                    <label for="login-password" class="form-label">Password</label>
+                    <input type="password" class="form-control" id="login-password">
+                </div>
+                <div class="button-wrapper">
+                    <button type="button" class="btn btn-dark" onclick="login()">Log In</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+        integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js"
+        integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
